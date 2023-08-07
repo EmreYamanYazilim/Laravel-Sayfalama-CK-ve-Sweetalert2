@@ -8,6 +8,9 @@
 @endsection
 
 @section('content')
+
+
+<div>
     <table class="table table-success">
         <thead>
         <tr>
@@ -26,8 +29,15 @@
         @endforeach
         </tbody>
     </table>
+</div>
+    <div class="row" >
+        <form action="" method="get">
+            <textarea name="text" id="editor"></textarea>
 
-    <div class="row">
+        </form>
+    </div>
+
+    <div class="">
          {!! $users->links(); !!}
     </div>
 
